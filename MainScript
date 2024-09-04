@@ -1,0 +1,2202 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 86 | Scripts: 24 | Modules: 0
+local G2L = {};
+
+-- StarterPack.Esteban
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["DisplayOrder"] = 1000000000;
+G2L["1"]["Name"] = [[Esteban]];
+
+-- StarterPack.Esteban.Esteban_Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 1000000000;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["2"]["Size"] = UDim2.new(0.45241037011146545, 0, 0.4896480441093445, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.3180464506149292, 0, 0.30227744579315186, 0);
+G2L["2"]["Name"] = [[Esteban_Main]];
+
+-- StarterPack.Esteban.Esteban_Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["ZIndex"] = 1000000000;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["4"]["Size"] = UDim2.new(0.18989071249961853, 0, 0.8076109886169434, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(0.016133960336446762, 0, 0.166970893740654, 0);
+G2L["4"]["Name"] = [[Esteban_MainPanel1]];
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Ghost
+G2L["5"] = Instance.new("TextButton", G2L["4"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["ZIndex"] = 1000000000;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["5"]["TextSize"] = 18;
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(0.9913097620010376, 0, 0.07068062573671341, 0);
+G2L["5"]["Name"] = [[Ghost]];
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[GhostMode]];
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Ghost.ColorChanger
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+G2L["6"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Ghost.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["5"]);
+G2L["7"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["7"]["Thickness"] = 2;
+G2L["7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Blatant
+G2L["8"] = Instance.new("TextButton", G2L["4"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["ZIndex"] = 1000000000;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["8"]["TextSize"] = 18;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Size"] = UDim2.new(0.9913097620010376, 0, 0.07068062573671341, 0);
+G2L["8"]["Name"] = [[Blatant]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Blatant]];
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.07068062573671341, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Blatant.ColorChanger
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+G2L["9"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Blatant.UIStroke
+G2L["a"] = Instance.new("UIStroke", G2L["8"]);
+G2L["a"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["a"]["Thickness"] = 2;
+G2L["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost
+G2L["b"] = Instance.new("Frame", G2L["2"]);
+G2L["b"]["ZIndex"] = 1000000000;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["b"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["b"]["Visible"] = false;
+G2L["b"]["Name"] = [[Estban_Ghost]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Aimbot
+G2L["d"] = Instance.new("TextButton", G2L["b"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["ZIndex"] = 1000000000;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["d"]["TextSize"] = 18;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Size"] = UDim2.new(0.22940726578235626, 0, 0.08115183562040329, 0);
+G2L["d"]["Name"] = [[Aimbot]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Aimbot | GUI]];
+G2L["d"]["Position"] = UDim2.new(0.024163568392395973, 0, 0.03664921596646309, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Aimbot.ColorChanger
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+G2L["e"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Aimbot.UIStroke
+G2L["f"] = Instance.new("UIStroke", G2L["d"]);
+G2L["f"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["f"]["Thickness"] = 2;
+G2L["f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Noclip
+G2L["10"] = Instance.new("TextButton", G2L["b"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["ZIndex"] = 1000000000;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["10"]["TextSize"] = 18;
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0.22940726578235626, 0, 0.08115183562040329, 0);
+G2L["10"]["Name"] = [[Noclip]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Noclip | GUI]];
+G2L["10"]["Position"] = UDim2.new(0.2696933448314667, 0, 0.03664921596646309, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Noclip.ColorChanger
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+G2L["11"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Noclip.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["10"]);
+G2L["12"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["12"]["Thickness"] = 2;
+G2L["12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Vape/Client
+G2L["13"] = Instance.new("TextButton", G2L["b"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["ZIndex"] = 1000000000;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["13"]["TextSize"] = 18;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["13"]["Name"] = [[Vape/Client]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Vape/Client | GUI]];
+G2L["13"]["Position"] = UDim2.new(0.5159749984741211, 0, 0.03664921596646309, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Vape/Client.ColorChanger
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+G2L["14"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Vape/Client.UIStroke
+G2L["15"] = Instance.new("UIStroke", G2L["13"]);
+G2L["15"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["15"]["Thickness"] = 2;
+G2L["15"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.InfMoney
+G2L["16"] = Instance.new("TextButton", G2L["b"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["ZIndex"] = 1000000000;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["16"]["TextSize"] = 18;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["Size"] = UDim2.new(0.20600000023841858, 0, 0.08100000023841858, 0);
+G2L["16"]["Name"] = [[InfMoney]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Infinity Cash]];
+G2L["16"]["Position"] = UDim2.new(0.7620000243186951, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.InfMoney.ColorChanger
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+G2L["17"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.InfMoney.UIStroke
+G2L["18"] = Instance.new("UIStroke", G2L["16"]);
+G2L["18"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["18"]["Thickness"] = 2;
+G2L["18"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.IYYield
+G2L["19"] = Instance.new("TextButton", G2L["b"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["ZIndex"] = 1000000000;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["19"]["TextSize"] = 18;
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Size"] = UDim2.new(0.22940726578235626, 0, 0.08115183562040329, 0);
+G2L["19"]["Name"] = [[IYYield]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Infinite Yield | GUI]];
+G2L["19"]["Position"] = UDim2.new(0.02416355349123478, 0, 0.14136125147342682, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.IYYield.ColorChanger
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1a"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.IYYield.UIStroke
+G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
+G2L["1b"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["1b"]["Thickness"] = 2;
+G2L["1b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Title
+G2L["1c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["ZIndex"] = 1000000000;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0.1725679636001587, 0, 0.048625797033309937, 0);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[ESTEBAN V1]];
+G2L["1c"]["Name"] = [[Title]];
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Position"] = UDim2.new(0.023111306130886078, 0, 0.1014799177646637, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Title.ColorChanger
+G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["1d"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["2"]);
+G2L["1e"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["1e"]["Thickness"] = 2;
+
+-- StarterPack.Esteban.Esteban_Main.ColorChanger
+G2L["1f"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1f"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Close
+G2L["20"] = Instance.new("TextButton", G2L["2"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["ZIndex"] = 1000000000;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["20"]["TextSize"] = 18;
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Size"] = UDim2.new(0.04371584579348564, 0, 0.05708245187997818, 0);
+G2L["20"]["Name"] = [[Close]];
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[X]];
+G2L["20"]["Position"] = UDim2.new(0.9562840461730957, 0, 0, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Close.mainScript
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["21"]["Name"] = [[mainScript]];
+
+-- StarterPack.Esteban.Esteban_Main.Close.UIStroke
+G2L["22"] = Instance.new("UIStroke", G2L["20"]);
+G2L["22"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["22"]["Thickness"] = 2;
+G2L["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Close.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["20"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Game
+G2L["24"] = Instance.new("TextLabel", G2L["2"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["ZIndex"] = 1000000000;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["24"]["Size"] = UDim2.new(0.6448087692260742, 0, 0.06553911417722702, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[ESTBAN-HOST]];
+G2L["24"]["Name"] = [[Game]];
+G2L["24"]["BackgroundTransparency"] = 1;
+G2L["24"]["Position"] = UDim2.new(0.2093687653541565, 0, 0.016913319006562233, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Game.ColorChanger
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+G2L["25"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Draggable
+G2L["26"] = Instance.new("LocalScript", G2L["2"]);
+G2L["26"]["Name"] = [[Draggable]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant
+G2L["27"] = Instance.new("Frame", G2L["2"]);
+G2L["27"]["ZIndex"] = 1000000000;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["27"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["27"]["Visible"] = false;
+G2L["27"]["Name"] = [[Estban_Blatant]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant.UICorner
+G2L["28"] = Instance.new("UICorner", G2L["27"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant.OwlHub
+G2L["29"] = Instance.new("TextButton", G2L["27"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["ZIndex"] = 1000000000;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["29"]["TextSize"] = 18;
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Size"] = UDim2.new(0.22940726578235626, 0, 0.08115183562040329, 0);
+G2L["29"]["Name"] = [[OwlHub]];
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[OwlHub | GUI]];
+G2L["29"]["Position"] = UDim2.new(0.024163568392395973, 0, 0.03664921596646309, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant.OwlHub.ColorChanger
+G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
+G2L["2a"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant.OwlHub.UIStroke
+G2L["2b"] = Instance.new("UIStroke", G2L["29"]);
+G2L["2b"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["2b"]["Thickness"] = 2;
+G2L["2b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2
+G2L["2c"] = Instance.new("Frame", G2L["2"]);
+G2L["2c"]["ZIndex"] = 1000000000;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["2c"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["2c"]["Visible"] = false;
+G2L["2c"]["Name"] = [[Estban_Ghost2]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.Vape/Client
+G2L["2d"] = Instance.new("TextButton", G2L["2c"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["ZIndex"] = 1000000000;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["2d"]["TextSize"] = 18;
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["2d"]["Name"] = [[Vape/Client]];
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[Vape/Client | GUI]];
+G2L["2d"]["Position"] = UDim2.new(0.024000000208616257, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.Vape/Client.ColorChanger
+G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+G2L["2e"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.Vape/Client.UIStroke
+G2L["2f"] = Instance.new("UIStroke", G2L["2d"]);
+G2L["2f"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["2f"]["Thickness"] = 2;
+G2L["2f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.UICorner
+G2L["30"] = Instance.new("UICorner", G2L["2c"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.ConfigInstall
+G2L["31"] = Instance.new("TextButton", G2L["2c"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["ZIndex"] = 1000000000;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["31"]["TextSize"] = 18;
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["31"]["Name"] = [[ConfigInstall]];
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Vape configs | GUI]];
+G2L["31"]["Position"] = UDim2.new(0.2691200375556946, 0, 0.037000007927417755, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.ConfigInstall.ColorChanger
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
+G2L["32"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.ConfigInstall.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["31"]);
+G2L["33"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["33"]["Thickness"] = 2;
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.IYYield
+G2L["34"] = Instance.new("TextButton", G2L["2c"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["ZIndex"] = 1000000000;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["34"]["TextSize"] = 18;
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(0.22940726578235626, 0, 0.08115183562040329, 0);
+G2L["34"]["Name"] = [[IYYield]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Infinite Yield | GUI]];
+G2L["34"]["Position"] = UDim2.new(0.514403760433197, 0, 0.03664921596646309, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.IYYield.ColorChanger
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["35"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.IYYield.UIStroke
+G2L["36"] = Instance.new("UIStroke", G2L["34"]);
+G2L["36"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["36"]["Thickness"] = 2;
+G2L["36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3
+G2L["37"] = Instance.new("Frame", G2L["2"]);
+G2L["37"]["ZIndex"] = 1000000000;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["37"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["37"]["Visible"] = false;
+G2L["37"]["Name"] = [[Estban_Ghost3]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.KAT
+G2L["38"] = Instance.new("TextButton", G2L["37"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["ZIndex"] = 1000000000;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["38"]["TextSize"] = 18;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["38"]["Name"] = [[KAT]];
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[KAT | GUI]];
+G2L["38"]["Position"] = UDim2.new(0.024000000208616257, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.KAT.ColorChanger
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
+G2L["39"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.KAT.UIStroke
+G2L["3a"] = Instance.new("UIStroke", G2L["38"]);
+G2L["3a"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["3a"]["Thickness"] = 2;
+G2L["3a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.UICorner
+G2L["3b"] = Instance.new("UICorner", G2L["37"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.IY Yield
+G2L["3c"] = Instance.new("TextButton", G2L["37"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["ZIndex"] = 1000000000;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["3c"]["TextSize"] = 18;
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["3c"]["Name"] = [[IY Yield]];
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Text"] = [[Infinite Yield | GUI]];
+G2L["3c"]["Position"] = UDim2.new(0.2691200375556946, 0, 0.037000007927417755, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.IY Yield.ColorChanger
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+G2L["3d"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.IY Yield.UIStroke
+G2L["3e"] = Instance.new("UIStroke", G2L["3c"]);
+G2L["3e"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["3e"]["Thickness"] = 2;
+G2L["3e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4
+G2L["3f"] = Instance.new("Frame", G2L["2"]);
+G2L["3f"]["ZIndex"] = 1000000000;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["3f"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["3f"]["Visible"] = false;
+G2L["3f"]["Name"] = [[Estban_Ghost4]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.AdminGUI
+G2L["40"] = Instance.new("TextButton", G2L["3f"]);
+G2L["40"]["TextWrapped"] = true;
+G2L["40"]["ZIndex"] = 1000000000;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["40"]["TextSize"] = 18;
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["40"]["Name"] = [[AdminGUI]];
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Text"] = [[Cool Admin | GUI]];
+G2L["40"]["Position"] = UDim2.new(0.024000000208616257, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.AdminGUI.ColorChanger
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+G2L["41"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.AdminGUI.UIStroke
+G2L["42"] = Instance.new("UIStroke", G2L["40"]);
+G2L["42"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["42"]["Thickness"] = 2;
+G2L["42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.UICorner
+G2L["43"] = Instance.new("UICorner", G2L["3f"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.IY Yield
+G2L["44"] = Instance.new("TextButton", G2L["3f"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["ZIndex"] = 1000000000;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["44"]["TextSize"] = 18;
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["44"]["Name"] = [[IY Yield]];
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[Infinite Yield | GUI]];
+G2L["44"]["Position"] = UDim2.new(0.2691200375556946, 0, 0.037000007927417755, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.IY Yield.ColorChanger
+G2L["45"] = Instance.new("LocalScript", G2L["44"]);
+G2L["45"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.IY Yield.UIStroke
+G2L["46"] = Instance.new("UIStroke", G2L["44"]);
+G2L["46"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["46"]["Thickness"] = 2;
+G2L["46"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport
+G2L["47"] = Instance.new("Frame", G2L["2"]);
+G2L["47"]["ZIndex"] = 1000000000;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["47"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["47"]["Visible"] = false;
+G2L["47"]["Name"] = [[Estban_Ghost_NotSupport]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.Vape/Client
+G2L["48"] = Instance.new("TextButton", G2L["47"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["ZIndex"] = 1000000000;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["48"]["TextSize"] = 18;
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["48"]["Name"] = [[Vape/Client]];
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[Vape/Client | GUI]];
+G2L["48"]["Position"] = UDim2.new(0.024000000208616257, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.Vape/Client.ColorChanger
+G2L["49"] = Instance.new("LocalScript", G2L["48"]);
+G2L["49"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.Vape/Client.UIStroke
+G2L["4a"] = Instance.new("UIStroke", G2L["48"]);
+G2L["4a"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["4a"]["Thickness"] = 2;
+G2L["4a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.UICorner
+G2L["4b"] = Instance.new("UICorner", G2L["47"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.IY Yield
+G2L["4c"] = Instance.new("TextButton", G2L["47"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["ZIndex"] = 1000000000;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["4c"]["TextSize"] = 18;
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["4c"]["Name"] = [[IY Yield]];
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[Infinite Yield | GUI]];
+G2L["4c"]["Position"] = UDim2.new(0.2691200375556946, 0, 0.037000007927417755, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.IY Yield.ColorChanger
+G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
+G2L["4d"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.IY Yield.UIStroke
+G2L["4e"] = Instance.new("UIStroke", G2L["4c"]);
+G2L["4e"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["4e"]["Thickness"] = 2;
+G2L["4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5
+G2L["4f"] = Instance.new("Frame", G2L["2"]);
+G2L["4f"]["ZIndex"] = 1000000000;
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["4f"]["Size"] = UDim2.new(0.7349726557731628, 0, 0.8076109886169434, 0);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Position"] = UDim2.new(0.24858565628528595, 0, 0.166970893740654, 0);
+G2L["4f"]["Visible"] = false;
+G2L["4f"]["Name"] = [[Estban_Ghost5]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.AutoClick
+G2L["50"] = Instance.new("TextButton", G2L["4f"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["ZIndex"] = 1000000000;
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["50"]["TextSize"] = 18;
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["50"]["Name"] = [[AutoClick]];
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[AutoFarm Ninjitsu]];
+G2L["50"]["Position"] = UDim2.new(0.024000000208616257, 0, 0.03700000047683716, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.AutoClick.ColorChanger
+G2L["51"] = Instance.new("LocalScript", G2L["50"]);
+G2L["51"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.AutoClick.UIStroke
+G2L["52"] = Instance.new("UIStroke", G2L["50"]);
+G2L["52"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["52"]["Thickness"] = 2;
+G2L["52"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.UICorner
+G2L["53"] = Instance.new("UICorner", G2L["4f"]);
+
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.IY Yield
+G2L["54"] = Instance.new("TextButton", G2L["4f"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["ZIndex"] = 1000000000;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(56, 56, 56);
+G2L["54"]["TextSize"] = 18;
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["Size"] = UDim2.new(0.23100000619888306, 0, 0.08100000023841858, 0);
+G2L["54"]["Name"] = [[IY Yield]];
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[Infinite Yield | GUI]];
+G2L["54"]["Position"] = UDim2.new(0.2691200375556946, 0, 0.037000007927417755, 0);
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.IY Yield.ColorChanger
+G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+G2L["55"]["Name"] = [[ColorChanger]];
+
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.IY Yield.UIStroke
+G2L["56"] = Instance.new("UIStroke", G2L["54"]);
+G2L["56"]["Color"] = Color3.fromRGB(255, 0, 0);
+G2L["56"]["Thickness"] = 2;
+G2L["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Ghost.ColorChanger
+local function C_6()
+local script = G2L["6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local Estban_GhostFrame = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost
+		local Estban_GhostFrame2 = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost2
+		local Estban_GhostFrame3 = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost3
+		local Estban_GhostFrame4 = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost4
+		local Estban_GhostFrame5 = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost5
+		local Estban_Ghost_NotSupport = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost_NotSupport
+		
+		if game.PlaceId == 301549746 then
+			if Estban_GhostFrame.Visible == false then
+				Estban_GhostFrame.Visible = true
+				Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame4.Visible = false
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame3.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+		
+		if game.PlaceId == 6872265039 or game.PlaceId == 8560631822 then
+			if Estban_GhostFrame2.Visible == false then
+				Estban_GhostFrame2.Visible = true
+				Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame4.Visible = false
+				Estban_GhostFrame3.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+		
+		if game.PlaceId == 621129760 then
+			if Estban_GhostFrame3.Visible == false then
+				Estban_GhostFrame3.Visible = true
+				Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame3.Visible = false
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame4.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+		
+		if game.PlaceId == 155615604 then
+			if Estban_GhostFrame4.Visible == false then
+				Estban_GhostFrame4.Visible = true
+				Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame4.Visible = false
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame3.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+		
+		if game.PlaceId == 3956818381 then
+			if Estban_GhostFrame5.Visible == false then
+				Estban_GhostFrame5.Visible = true
+				Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame4.Visible = false
+				Estban_GhostFrame5.Visible = false
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame3.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+		
+		if game.PlaceId ~= 155615604 and game.PlaceId ~= 621129760 and game.PlaceId ~= 6872265039 and game.PlaceId ~= 8560631822 and game.PlaceId ~= 301549746 and game.PlaceId ~= 3956818381 then
+			if Estban_Ghost_NotSupport.Visible == false then
+				Estban_Ghost_NotSupport.Visible = true
+				Estban_Ghost_NotSupport.Parent.Estban_Blatant.Visible = false
+			else
+				Estban_GhostFrame4.Visible = false
+				Estban_GhostFrame.Visible = false
+				Estban_GhostFrame2.Visible = false
+				Estban_GhostFrame3.Visible = false
+				Estban_Ghost_NotSupport.Parent.Estban_Ghost_NotSupport.Visible = false
+			end
+		end
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Esteban_MainPanel1.Ghost -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_6);
+-- StarterPack.Esteban.Esteban_Main.Esteban_MainPanel1.Blatant.ColorChanger
+local function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local Estban_GhostFrame = plr.PlayerGui.Esteban.Esteban_Main.Estban_Ghost
+		if Estban_GhostFrame.Parent.Estban_Blatant.Visible == false then
+			Estban_GhostFrame.Parent.Estban_Blatant.Visible = true
+			Estban_GhostFrame.Visible = false
+		else
+			Estban_GhostFrame.Parent.Estban_Blatant.Visible = false
+		end
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Esteban_MainPanel1.Blatant -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_9);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Aimbot.ColorChanger
+local function C_e()
+local script = G2L["e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.Aimbot -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_e);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Noclip.ColorChanger
+local function C_11()
+local script = G2L["11"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Workspace = game:GetService("Workspace")
+		local CoreGui = game:GetService("CoreGui")
+		local Players = game:GetService("Players")
+		local Noclip = Instance.new("ScreenGui")
+		local BG = Instance.new("Frame")
+		local Title = Instance.new("TextLabel")
+		local Toggle = Instance.new("TextButton")
+		local StatusPF = Instance.new("TextLabel")
+		local Status = Instance.new("TextLabel")
+		local Credit = Instance.new("TextLabel")
+		local Plr = Players.LocalPlayer
+		local Clipon = false
+	
+		Noclip.Name = "Noclip"
+		Noclip.Parent = game.CoreGui
+	
+		BG.Name = "BG"
+		BG.Parent = Noclip
+		BG.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+		BG.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+		BG.BorderSizePixel = 2
+		BG.Position = UDim2.new(0.149479166, 0, 0.82087779, 0)
+		BG.Size = UDim2.new(0, 210, 0, 127)
+		BG.Active = true
+		BG.Draggable = true
+	
+		Title.Name = "Title"
+		Title.Parent = BG
+		Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
+		Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
+		Title.BorderSizePixel = 2
+		Title.Size = UDim2.new(0, 210, 0, 33)
+		Title.Font = Enum.Font.Highway
+		Title.Text = "Noclip"
+		Title.TextColor3 = Color3.new(1, 1, 1)
+		Title.FontSize = Enum.FontSize.Size32
+		Title.TextSize = 30
+		Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
+		Title.TextStrokeTransparency = 0
+	
+		Toggle.Parent = BG
+		Toggle.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
+		Toggle.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
+		Toggle.BorderSizePixel = 2
+		Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
+		Toggle.Size = UDim2.new(0, 146, 0, 36)
+		Toggle.Font = Enum.Font.Highway
+		Toggle.FontSize = Enum.FontSize.Size28
+		Toggle.Text = "Toggle"
+		Toggle.TextColor3 = Color3.new(1, 1, 1)
+		Toggle.TextSize = 25
+		Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
+		Toggle.TextStrokeTransparency = 0
+	
+		StatusPF.Name = "StatusPF"
+		StatusPF.Parent = BG
+		StatusPF.BackgroundColor3 = Color3.new(1, 1, 1)
+		StatusPF.BackgroundTransparency = 1
+		StatusPF.Position = UDim2.new(0.314285725, 0, 0.708661377, 0)
+		StatusPF.Size = UDim2.new(0, 56, 0, 20)
+		StatusPF.Font = Enum.Font.Highway
+		StatusPF.FontSize = Enum.FontSize.Size24
+		StatusPF.Text = "Status:"
+		StatusPF.TextColor3 = Color3.new(1, 1, 1)
+		StatusPF.TextSize = 20
+		StatusPF.TextStrokeColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+		StatusPF.TextStrokeTransparency = 0
+		StatusPF.TextWrapped = true
+	
+		Status.Name = "Status"
+		Status.Parent = BG
+		Status.BackgroundColor3 = Color3.new(1, 1, 1)
+		Status.BackgroundTransparency = 1
+		Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
+		Status.Size = UDim2.new(0, 56, 0, 20)
+		Status.Font = Enum.Font.Highway
+		Status.FontSize = Enum.FontSize.Size14
+		Status.Text = "off"
+		Status.TextColor3 = Color3.new(0.666667, 0, 0)
+		Status.TextScaled = true
+		Status.TextSize = 14
+		Status.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
+		Status.TextWrapped = true
+		Status.TextXAlignment = Enum.TextXAlignment.Left
+	
+		Credit.Name = "Credit"
+		Credit.Parent = BG
+		Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+		Credit.BackgroundTransparency = 1
+		Credit.Position = UDim2.new(0.195238099, 0, 0.866141737, 0)
+		Credit.Size = UDim2.new(0, 128, 0, 17)
+		Credit.Font = Enum.Font.SourceSans
+		Credit.FontSize = Enum.FontSize.Size18
+		Credit.Text = "Created by KingLuna"
+		Credit.TextColor3 = Color3.new(1, 1, 1)
+		Credit.TextSize = 16
+		Credit.TextStrokeColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+		Credit.TextStrokeTransparency = 0
+		Credit.TextWrapped = true
+	
+		Toggle.MouseButton1Click:connect(function()
+			if Status.Text == "off" then
+				Clipon = true
+				Status.Text = "on"
+				Status.TextColor3 = Color3.new(0,185,0)
+				Stepped = game:GetService("RunService").Stepped:Connect(function()
+					if not Clipon == false then
+						for a, b in pairs(Workspace:GetChildren()) do
+							if b.Name == Plr.Name then
+								for i, v in pairs(Workspace[Plr.Name]:GetChildren()) do
+									if v:IsA("BasePart") then
+										v.CanCollide = false
+									end end end end
+					else
+						Stepped:Disconnect()
+					end
+				end)
+			elseif Status.Text == "on" then
+				Clipon = false
+				Status.Text = "off"
+				Status.TextColor3 = Color3.new(170,0,0)
+			end
+		end)
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.Noclip -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_11);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.Vape/Client.ColorChanger
+local function C_14()
+local script = G2L["14"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_14);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.InfMoney.ColorChanger
+local function C_17()
+local script = G2L["17"];
+	script.Parent.MouseButton1Click:Connect(function()
+		cash = 25000
+		while wait(0.05) do
+			cash = cash + 25000
+			if cash > 25000 then 
+				cash = 25000
+			end
+			game.Players.LocalPlayer.Cash.Value = cash
+		end
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.InfMoney -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_17);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost.IYYield.ColorChanger
+local function C_1a()
+local script = G2L["1a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.Aimbot -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_1a);
+-- StarterPack.Esteban.Esteban_Main.Title.ColorChanger
+local function C_1d()
+local script = G2L["1d"];
+	local textLabel = script.Parent -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 무지개 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	-- 색상 전환 효과를 위한 Tween 정보 설정
+	local tweenInfo = TweenInfo.new(
+		1, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	while task.wait() do
+		local nextIndex = currentIndex + 1
+		if nextIndex > #colors then
+			nextIndex = 1
+		end
+	
+		-- Tween을 생성하여 색상을 부드럽게 전환
+		local colorTween = TweenService:Create(textLabel, tweenInfo, {TextColor3 = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+	
+end;
+task.spawn(C_1d);
+-- StarterPack.Esteban.Esteban_Main.ColorChanger
+local function C_1f()
+local script = G2L["1f"];
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+	
+end;
+task.spawn(C_1f);
+-- StarterPack.Esteban.Esteban_Main.Close.mainScript
+local function C_21()
+local script = G2L["21"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Close -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_21);
+-- StarterPack.Esteban.Esteban_Main.Game.ColorChanger
+local function C_25()
+local script = G2L["25"];
+	wait(game:IsLoaded())
+	game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: "..game.Name
+	
+	local placeId = game.PlaceId
+	if placeId == 301549746 then
+		script.Parent.Parent.Estban_Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = true
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: CB:RO, Orginal"
+	else
+		script.Parent.Parent.Estban_Ghost_NotSupport.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: Not Supported"
+	end
+	
+	if placeId == 6872265039 then
+		script.Parent.Parent.Estban_Ghost2.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: BedWars, Lobby"
+	end
+	
+	if placeId == 8560631822 then
+		script.Parent.Parent.Estban_Ghost2.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: BedWars, InGame"
+	end
+	
+	if placeId == 621129760 then
+		script.Parent.Parent.Estban_Ghost3.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: KAT, InGame"
+	end
+	
+	if placeId == 155615604 then
+		script.Parent.Parent.Estban_Ghost4.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: Prison Life, Orginal"
+	end
+	
+	if placeId == 3956818381 then
+		script.Parent.Parent.Estban_Ghost5.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Ghost.Visible = true
+		script.Parent.Parent.Esteban_MainPanel1.Blatant.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Game.Text = "Estban-Host: Ninja Legends [1], Orginal"
+	end
+	
+	local textLabel = script.Parent -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 무지개 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	-- 색상 전환 효과를 위한 Tween 정보 설정
+	local tweenInfo = TweenInfo.new(
+		1, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	while task.wait() do
+		local nextIndex = currentIndex + 1
+		if nextIndex > #colors then
+			nextIndex = 1
+		end
+	
+		-- Tween을 생성하여 색상을 부드럽게 전환
+		local colorTween = TweenService:Create(textLabel, tweenInfo, {TextColor3 = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+	
+end;
+task.spawn(C_25);
+-- StarterPack.Esteban.Esteban_Main.Draggable
+local function C_26()
+local script = G2L["26"];
+	local frame = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main -- 이 스크립트가 부착된 Frame을 가정합니다.
+	local dragging = false
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+			update(input)
+		end
+	end)
+	
+	frame.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+	
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- 키 입력 처리 함수
+	local function onInputBegan(input, gameProcessed)
+		if gameProcessed then return end -- 게임이 이미 입력을 처리한 경우 무시
+		if input.KeyCode == Enum.KeyCode.KeypadMultiply then
+			frame.Visible = not frame.Visible -- Visible 속성 토글
+		end
+	end
+	
+	-- 입력 시작 이벤트에 함수 연결
+	UserInputService.InputBegan:Connect(onInputBegan)
+	
+end;
+task.spawn(C_26);
+-- StarterPack.Esteban.Esteban_Main.Estban_Blatant.OwlHub.ColorChanger
+local function C_2a()
+local script = G2L["2a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/OWLHUB")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.Aimbot -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_2a);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.Vape/Client.ColorChanger
+local function C_2e()
+local script = G2L["2e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_2e);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.ConfigInstall.ColorChanger
+local function C_32()
+local script = G2L["32"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Copiums/Copium/main/Installer.lua", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_32);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost2.IYYield.ColorChanger
+local function C_35()
+local script = G2L["35"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost.Aimbot -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_35);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.KAT.ColorChanger
+local function C_39()
+local script = G2L["39"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/KatScript", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_39);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost3.IY Yield.ColorChanger
+local function C_3d()
+local script = G2L["3d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_3d);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.AdminGUI.ColorChanger
+local function C_41()
+local script = G2L["41"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/MainScript", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_41);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost4.IY Yield.ColorChanger
+local function C_45()
+local script = G2L["45"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_45);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.Vape/Client.ColorChanger
+local function C_49()
+local script = G2L["49"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_49);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost_NotSupport.IY Yield.ColorChanger
+local function C_4d()
+local script = G2L["4d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_4d);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.AutoClick.ColorChanger
+local function C_51()
+local script = G2L["51"];
+	script.Parent.MouseButton1Click:Connect(function()
+		while wait() do
+			local args = {
+				[1] = "swingKatana"
+			}
+	
+			game:GetService("Players").LocalPlayer:WaitForChild("ninjaEvent"):FireServer(unpack(args))
+	
+		end
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_51);
+-- StarterPack.Esteban.Esteban_Main.Estban_Ghost5.IY Yield.ColorChanger
+local function C_55()
+local script = G2L["55"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/InfiniteY")();
+	end)
+	
+	local textLabel = game.Players.LocalPlayer.PlayerGui.Esteban.Esteban_Main.Estban_Ghost["Vape/Client"] -- TextLabel을 스크립트의 부모 요소로 설정합니다.
+	local uiStroke = textLabel:FindFirstChildOfClass("UIStroke") -- UIStroke 객체를 찾습니다.
+	local TweenService = game:GetService("TweenService")
+	
+	-- 밝은 색상 배열
+	local colors = {
+		Color3.fromRGB(255, 105, 180), -- 밝은 빨강 (핑크)
+		Color3.fromRGB(255, 165, 0),   -- 밝은 주황
+		Color3.fromRGB(255, 255, 0),   -- 밝은 노랑
+		Color3.fromRGB(144, 238, 144), -- 밝은 초록 (라이트 그린)
+		Color3.fromRGB(173, 216, 230), -- 밝은 파랑 (라이트 블루)
+		Color3.fromRGB(221, 160, 221), -- 밝은 남색 (라벤더)
+		Color3.fromRGB(255, 182, 193), -- 밝은 보라 (라이트 핑크)
+	}
+	
+	local currentIndex = 1
+	
+	local tweenInfo = TweenInfo.new(
+		1.5, -- 전환에 걸리는 시간 (초)
+		Enum.EasingStyle.Linear, -- 전환 스타일
+		Enum.EasingDirection.InOut, -- 전환 방향
+		-1, -- 반복 횟수 (-1은 무한 반복)
+		true, -- 반복할 때 반전
+		0 -- 지연 시간
+	)
+	
+	local function getNextIndex(index)
+		return index % #colors + 1
+	end
+	
+	while true do
+		local nextIndex = getNextIndex(currentIndex)
+	
+		-- 이번에는 UIStroke의 Color 속성을 변경
+		local colorTween = TweenService:Create(uiStroke, tweenInfo, {Color = colors[nextIndex]})
+		colorTween:Play()
+	
+		-- 다음 색상으로 넘어가기 전에 기다림
+		wait(1)
+	
+		currentIndex = nextIndex
+	end
+end;
+task.spawn(C_55);
+
+return G2L["1"], require;
